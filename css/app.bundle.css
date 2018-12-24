@@ -399,7 +399,9 @@
     top: calc(50% + 50px);
     left: calc(40%);
     font-size: 2vw;
-    font-family: 'Mirabella', Arial, Helvetica, sans-serif; }
+    font-family: 'Mirabella', Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 2px 2px 15px gray;
+            box-shadow: 2px 2px 15px gray; }
 
 .landing-page .about {
   position: relative;
@@ -425,7 +427,9 @@
     top: calc(50% + 50px);
     left: calc(50%);
     font-size: 2vw;
-    font-family: 'Mirabella', Arial, Helvetica, sans-serif; }
+    font-family: 'Mirabella', Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 2px 2px 15px gray;
+            box-shadow: 2px 2px 15px gray; }
 
 .gameNavBar .btn {
   font-family: 'Mirabella', Arial, Helvetica, sans-serif;
