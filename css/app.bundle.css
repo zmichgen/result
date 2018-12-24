@@ -421,6 +421,18 @@
   .fontree label {
     font-size: 20px; }
 
+.infotext-reg {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Mirabella', Arial, Helvetica, sans-serif; }
+
+.message-warning {
+  background: url(../images/paper1.png);
+  background-size: 100% 100%;
+  border: none;
+  padding: 20px; }
+
 @font-face {
   font-family: 'Azoft Sans Bold';
   src: url(../fonts/azoft-sans-bold.ttf) format("truetype"); }
