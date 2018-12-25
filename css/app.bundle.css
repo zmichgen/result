@@ -20,6 +20,8 @@
   font-family: 'Mirabella', Arial, Helvetica, sans-serif; }
 
 .message-warning {
+  font-family: 'Mirabella', Arial, Helvetica, sans-serif;
+  font-size: 2em;
   background: url(../images/paper1.png);
   background-size: 100% 100%;
   border: none;
@@ -359,6 +361,13 @@
     -webkit-transform: scale(1, 1) skewX(0);
             transform: scale(1, 1) skewX(0); } }
 
+.message-warning {
+  font-family: 'Mirabella', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  background: url(../images/paper2.png);
+  background-size: 100% 100%;
+  border: none;
+  padding: 20px; }
 
 .loadershow {
   width: 100%;
