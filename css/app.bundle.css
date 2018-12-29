@@ -166,6 +166,18 @@
     top: 30px;
     left: 530px;
     width: 500px; }
+  .game .specEffectSanta {
+    position: absolute;
+    top: 210px;
+    left: 40px;
+    width: 400px;
+    z-index: 5; }
+  .game .specEffectMonster {
+    position: absolute;
+    top: 70px;
+    left: 570px;
+    width: 100%;
+    z-index: 5; }
 
 .disabled {
   opacity: 0.65;
@@ -180,18 +192,27 @@
             filter: drop-shadow(8px 8px 5px #222);
     -webkit-perspective: 200px;
             perspective: 200px; }
-  .santa .body-breath {
+  .santa .s-body-breath {
     -webkit-animation: s-body-breath 2.5s infinite;
             animation: s-body-breath 2.5s infinite; }
-  .santa .head-breath {
+  .santa .s-head-breath {
     -webkit-animation: s-head-breath 2.5s infinite;
             animation: s-head-breath 2.5s infinite; }
-  .santa .rightArm-breath {
+  .santa .s-rightArm-breath {
     -webkit-animation: s-rightArm-breath 2.5s infinite;
             animation: s-rightArm-breath 2.5s infinite; }
-  .santa .leftArm-breath {
+  .santa .s-leftArm-breath {
     -webkit-animation: s-leftArm-breath 2.5s infinite;
             animation: s-leftArm-breath 2.5s infinite; }
+  .santa .s-head-break {
+    -webkit-transform-origin: 45% 35%;
+        -ms-transform-origin: 45% 35%;
+            transform-origin: 45% 35%;
+    -webkit-animation: s-headbreak 2s;
+            animation: s-headbreak 2s; }
+  .santa .s-break {
+    -webkit-animation: s-breack 2s;
+            animation: s-breack 2s; }
 
 @-webkit-keyframes s-body-breath {
   0% {
@@ -281,6 +302,38 @@
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
 
+@-webkit-keyframes s-headbreak {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg); } }
+
+@keyframes s-headbreak {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg); } }
+
+@-webkit-keyframes s-break {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg); } }
+
+@keyframes s-break {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg); } }
+
 .monster {
   position: relative; }
   .monster img {
@@ -288,21 +341,42 @@
     width: 450px;
     -webkit-filter: drop-shadow(8px 8px 5px #222);
             filter: drop-shadow(8px 8px 5px #222); }
-  .monster .body-breath {
+  .monster .m-body-breath {
     -webkit-animation: m-body-breath 3s infinite;
             animation: m-body-breath 3s infinite; }
-  .monster .head-breath {
+  .monster .m-head-breath {
     -webkit-animation: m-head-breath 3s infinite;
             animation: m-head-breath 3s infinite; }
-  .monster .rightArm-breath {
+  .monster .m-rightArm-breath {
     -webkit-animation: m-rightArm-breath 3s infinite;
             animation: m-rightArm-breath 3s infinite; }
-  .monster .leftArm-breath {
+  .monster .m-leftArm-breath {
     -webkit-animation: m-leftArm-breath 3s infinite;
             animation: m-leftArm-breath 3s infinite; }
-  .monster .weapon-breath {
+  .monster .m-weapon-breath {
     -webkit-animation: m-weapon-breath 3s infinite;
             animation: m-weapon-breath 3s infinite; }
+  .monster .m-rightLeg-shot {
+    -webkit-animation: m-rightLeg-shot 2s;
+            animation: m-rightLeg-shot 2s; }
+  .monster .m-rightArm-shot {
+    -webkit-transform-origin: 45% 35%;
+        -ms-transform-origin: 45% 35%;
+            transform-origin: 45% 35%;
+    -webkit-animation: m-rightArm-shot 2s;
+            animation: m-rightArm-shot 2s; }
+  .monster .m-leftArm-shot {
+    -webkit-transform-origin: 65% 30%;
+        -ms-transform-origin: 65% 30%;
+            transform-origin: 65% 30%;
+    -webkit-animation: m-leftArm-shot 2s;
+            animation: m-leftArm-shot 2s; }
+  .monster .m-weapon-shot {
+    -webkit-transform-origin: 65% 30%;
+        -ms-transform-origin: 65% 30%;
+            transform-origin: 65% 30%;
+    -webkit-animation: m-weapon-shot 2s;
+            animation: m-weapon-shot 2s; }
 
 @-webkit-keyframes m-body-breath {
   0% {
@@ -353,8 +427,8 @@
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
   50% {
-    -webkit-transform: translate(-3px, -7px);
-            transform: translate(-3px, -7px); }
+    -webkit-transform: translate(3px, -7px);
+            transform: translate(3px, -7px); }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
@@ -364,8 +438,8 @@
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
   50% {
-    -webkit-transform: translate(-3px, -7px);
-            transform: translate(-3px, -7px); }
+    -webkit-transform: translate(3px, -7px);
+            transform: translate(3px, -7px); }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
@@ -394,22 +468,110 @@
 
 @-webkit-keyframes m-weapon-breath {
   0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(3px, -7px);
+            transform: translate(3px, -7px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes m-weapon-breath {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(3px, -7px);
+            transform: translate(3px, -7px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes m-rightLeg-shot {
+  0% {
     -webkit-transform: translate(0, 0) rotateY(0deg);
             transform: translate(0, 0) rotateY(0deg); }
-  50% {
-    -webkit-transform: translate(3px, -7px) rotate(2deg);
-            transform: translate(3px, -7px) rotate(2deg); }
+  95% {
+    -webkit-transform: translate(3px, -10px) rotate(30deg);
+            transform: translate(3px, -10px) rotate(30deg); }
   100% {
     -webkit-transform: translate(0, 0) rotate(0deg);
             transform: translate(0, 0) rotate(0deg); } }
 
-@keyframes m-weapon-breath {
+@keyframes m-rightLeg-shot {
   0% {
     -webkit-transform: translate(0, 0) rotateY(0deg);
             transform: translate(0, 0) rotateY(0deg); }
-  50% {
-    -webkit-transform: translate(3px, -7px) rotate(2deg);
-            transform: translate(3px, -7px) rotate(2deg); }
+  95% {
+    -webkit-transform: translate(3px, -10px) rotate(30deg);
+            transform: translate(3px, -10px) rotate(30deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@-webkit-keyframes m-rightArm-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(80deg);
+            transform: translate(3px, -7px) rotate(80deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); } }
+
+@keyframes m-rightArm-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(80deg);
+            transform: translate(3px, -7px) rotate(80deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); } }
+
+@-webkit-keyframes m-leftArm-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(60deg);
+            transform: translate(3px, -7px) rotate(60deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); } }
+
+@keyframes m-leftArm-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(60deg);
+            transform: translate(3px, -7px) rotate(60deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); } }
+
+@-webkit-keyframes m-weapon-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(70deg);
+            transform: translate(3px, -7px) rotate(70deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes m-weapon-shot {
+  0% {
+    -webkit-transform: translate(0, 0) rotateY(0deg);
+            transform: translate(0, 0) rotateY(0deg); }
+  95% {
+    -webkit-transform: translate(3px, -7px) rotate(70deg);
+            transform: translate(3px, -7px) rotate(70deg); }
   100% {
     -webkit-transform: translate(0, 0) rotate(0deg);
             transform: translate(0, 0) rotate(0deg); } }
@@ -509,6 +671,9 @@
   background-size: 100% 100%;
   border: none;
   padding: 20px; }
+
+.mathtask {
+  text-align: center; }
 
 @font-face {
   font-family: 'Azoft Sans Bold';
