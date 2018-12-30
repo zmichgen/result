@@ -115,12 +115,16 @@
     width: 50vw;
     height: auto; }
     .landing-page .rules .slides h5 {
+      font-family: 'Mirabella',Arial, Helvetica, sans-serif;
+      font-size: 1.5vw;
       color: black;
       background: white;
       opacity: 0.6;
       padding: 10px;
       border-radius: 20px; }
     .landing-page .rules .slides p {
+      font-family: 'Mirabella',Arial, Helvetica, sans-serif;
+      font-size: 1.3vw;
       color: black;
       background: white;
       opacity: 0.8; }
@@ -134,6 +138,25 @@
     font-family: 'Mirabella', Arial, Helvetica, sans-serif;
     -webkit-box-shadow: 2px 2px 15px gray;
             box-shadow: 2px 2px 15px gray; }
+
+.landing-page footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #221d1d;
+  color: #bdbdbd; }
+  .landing-page footer div {
+    padding: 20px; }
+    .landing-page footer div p {
+      margin: 0;
+      font-family: 'Lato', Arial, Helvetica, sans-serif;
+      font-size: 1vw; }
 
 .gameNavBar .btn {
   font-family: 'Mirabella', Arial, Helvetica, sans-serif;
@@ -818,10 +841,10 @@
   text-align: center; }
 
 @font-face {
-  font-family: 'Azoft Sans Bold';
-  src: url(../fonts/azoft-sans-bold.ttf) format("truetype"); }
-
-@font-face {
   font-family: 'Mirabella';
   src: url(../fonts/Mirabella.ttf.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Bold.ttf) format("truetype"); }
 
