@@ -1,6 +1,8 @@
 .fontree {
   background-color: white;
-  background-image: url(../images/tree.1.png);
+  background-image: url(../images/tree0.png);
+  background-size: 700px auto;
+  background-repeat: no-repeat;
   padding: 10px;
   margin: 20px;
   -webkit-box-shadow: 1px 1px 10px;
