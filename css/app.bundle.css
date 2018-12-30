@@ -102,6 +102,39 @@
     -webkit-box-shadow: 2px 2px 15px gray;
             box-shadow: 2px 2px 15px gray; }
 
+.landing-page .rules {
+  position: relative;
+  background-image: url(../images/sneg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 1000px; }
+  .landing-page .rules .slides {
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    width: 50vw;
+    height: auto; }
+    .landing-page .rules .slides h5 {
+      color: black;
+      background: white;
+      opacity: 0.6;
+      padding: 10px;
+      border-radius: 20px; }
+    .landing-page .rules .slides p {
+      color: black;
+      background: white;
+      opacity: 0.8; }
+    .landing-page .rules .slides img {
+      width: 50vw; }
+  .landing-page .rules .btn {
+    position: absolute;
+    top: 40vw;
+    left: 40vw;
+    font-size: 2vw;
+    font-family: 'Mirabella', Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 2px 2px 15px gray;
+            box-shadow: 2px 2px 15px gray; }
+
 .gameNavBar .btn {
   font-family: 'Mirabella', Arial, Helvetica, sans-serif;
   font-size: 23px;
