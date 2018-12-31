@@ -107,7 +107,7 @@
   background-image: url(../images/sneg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 1000px; }
+  height: 60vw; }
   .landing-page .rules .slides {
     position: absolute;
     top: 10vw;
@@ -140,6 +140,7 @@
             box-shadow: 2px 2px 15px gray; }
 
 .landing-page footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
