@@ -754,7 +754,13 @@
 .bg-hp-100 {
   background: #0bf551; }
 
+.bg-hp-95 {
+  background: #0bf551; }
+
 .bg-hp-90 {
+  background: #0bf551; }
+
+.bg-hp-85 {
   background: #0bf551; }
 
 .bg-hp-80 {
@@ -766,13 +772,25 @@
 .bg-hp-70 {
   background: #0bf5e2; }
 
+.bg-hp-65 {
+  background: #0bf5e2; }
+
 .bg-hp-60 {
   background: #0bf5e2; }
+
+.bg-hp-55 {
+  background: #f5740b; }
 
 .bg-hp-50 {
   background: #f5740b; }
 
+.bg-hp-45 {
+  background: #f5740b; }
+
 .bg-hp-40 {
+  background: #f5740b; }
+
+.bg-hp-35 {
   background: #f5740b; }
 
 .bg-hp-30 {
@@ -784,7 +802,13 @@
 .bg-hp-20 {
   background: #f50b1f; }
 
+.bg-hp-15 {
+  background: #f50b1f; }
+
 .bg-hp-10 {
+  background: #f50b1f; }
+
+.bg-hp-5 {
   background: #f50b1f; }
 
 .bg-hp-0 {
@@ -830,6 +854,9 @@
   border: none;
   padding: 20px; }
 
+.mathtask {
+  text-align: center; }
+
 .message-warning {
   font-family: 'Mirabella', Arial, Helvetica, sans-serif;
   font-size: 2em;
@@ -838,7 +865,10 @@
   border: none;
   padding: 20px; }
 
-.mathtask {
+.translate {
+  text-align: center; }
+
+.translate {
   text-align: center; }
 
 @font-face {
