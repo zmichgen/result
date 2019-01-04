@@ -869,18 +869,17 @@
   height: 100px; }
   .game-container .letter {
     display: inline-block;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
     float: left;
     background: #fd5d01;
     padding: 0 10px;
     -webkit-box-shadow: 2px 2px 10px gray;
             box-shadow: 2px 2px 10px gray;
     border-radius: 10px; }
-    .game-container .letter p {
-      padding: 0;
-      margin: 0; }
 
 .translate {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Lato',Arial, Helvetica, sans-serif; }
 
 @font-face {
   font-family: 'Mirabella';
