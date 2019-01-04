@@ -881,6 +881,10 @@
   text-align: center;
   font-family: 'Lato',Arial, Helvetica, sans-serif; }
 
+.translate {
+  text-align: center;
+  font-family: 'Lato',Arial, Helvetica, sans-serif; }
+
 @font-face {
   font-family: 'Mirabella';
   src: url(../fonts/Mirabella.ttf.ttf) format("truetype"); }
