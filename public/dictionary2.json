@@ -66,12 +66,6 @@
     ]
   },
   {
-    "word":"chief",
-    "translate": [
-      "гланый", "основной", "начальник", "шеф"
-    ]
-  },
-  {
     "word":"honor",
     "translate": [
       "честь", "слава", "почет", "уважение"
@@ -93,18 +87,6 @@
     "word":"damage",
     "translate": [
       "урон", "вред", "авария", "ущерб", "повреждение"
-    ]
-  },
-  {
-    "word":"injury",
-    "translate": [
-      "травма", "ушиб", "рана"
-    ]
-  },
-  {
-    "word":"bruise",
-    "translate": [
-      "синяк", "ушиб", "кровоподтек"
     ]
   },
   {
@@ -142,6 +124,67 @@
     "translate": [
       "вид", "кругозор", "перспектива"
     ]
+  },
+  {
+    "word":"plate",
+    "translate": [
+      "тарелка", "миска"
+    ]
+  },
+  {
+    "word":"spoon",
+    "translate": [
+      "ложка"
+    ]
+  },
+  {
+    "word":"fork",
+    "translate": [
+      "вилка"
+    ]
+  },
+  {
+    "word":"moon",
+    "translate": [
+      "луна"
+    ]
+  },
+  {
+    "word":"sun",
+    "translate": [
+      "солнце"
+    ]
+  },
+  {
+    "word":"tea",
+    "translate": [
+      "чай"
+    ]
+  },
+  {
+    "word":"cup",
+    "translate": [
+      "чашка"
+    ]
+  },
+  {
+    "word":"milk",
+    "translate": [
+      "молоко"
+    ]
+  },
+  {
+    "word":"face",
+    "translate": [
+      "лицо"
+    ]
+  },
+  {
+    "word":"head",
+    "translate": [
+      "голова"
+    ]
   }
+  
 ]
 

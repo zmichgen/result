@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Mirabella';
+  src: url(../fonts/Mirabella.ttf.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Bold.ttf) format("truetype"); }
+
 .fontree {
   background-color: white;
   background-image: url(../images/tree0.png);
@@ -1007,12 +1015,4 @@
   background-image: url(../images/bigBang.png);
   background-size: 100% auto;
   background-repeat: no-repeat; }
-
-@font-face {
-  font-family: 'Mirabella';
-  src: url(../fonts/Mirabella.ttf.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Lato';
-  src: url(../fonts/Lato-Bold.ttf) format("truetype"); }
 
