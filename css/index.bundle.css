@@ -965,24 +965,30 @@
     -webkit-animation: animCloud 80s infinite linear;
             animation: animCloud 80s infinite linear; }
 
-@-webkit-keyframes animBalloon {
-  from {
-    -webkit-transform: translateY(400%);
-            transform: translateY(400%); }
-  to {
-    -webkit-transform: translateY(-150%);
-            transform: translateY(-150%); } }
+@-webkit-keyframes animBallX {
+  0% {
+    -webkit-transform: translateY(400%) translateX(0);
+            transform: translateY(400%) translateX(0); }
+  50% {
+    -webkit-transform: translateY(175%) translateX(100px);
+            transform: translateY(175%) translateX(100px); }
+  100% {
+    -webkit-transform: translateY(-150%) translateX(-100px);
+            transform: translateY(-150%) translateX(-100px); } }
 
-@keyframes animBalloon {
-  from {
-    -webkit-transform: translateY(400%);
-            transform: translateY(400%); }
-  to {
-    -webkit-transform: translateY(-150%);
-            transform: translateY(-150%); } }
+@keyframes animBallX {
+  0% {
+    -webkit-transform: translateY(400%) translateX(0);
+            transform: translateY(400%) translateX(0); }
+  50% {
+    -webkit-transform: translateY(175%) translateX(100px);
+            transform: translateY(175%) translateX(100px); }
+  100% {
+    -webkit-transform: translateY(-150%) translateX(-100px);
+            transform: translateY(-150%) translateX(-100px); } }
   #task-area .balloon-game .fly {
-    -webkit-animation: animBalloon 5s linear;
-            animation: animBalloon 5s linear; }
+    -webkit-animation: animBallX 5s linear;
+            animation: animBallX 5s linear; }
   #task-area .balloon-game .balloon {
     width: 90px;
     height: 110px;
